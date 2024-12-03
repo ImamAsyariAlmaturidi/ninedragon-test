@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +30,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Toaster />
+        <div className="w-full flex bg-neutral-600 text-white justify-around p-4 font-medium font-mono">
+          <Link href={"/"}>To Book List</Link>
+          <Link href={"/author"}>To Author List</Link>
+        </div>
         {children}
       </body>
     </html>
