@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ```bash
 
-First, run the development server: config .env.template and rename to .env
+First, run the development server: config .env.text and rename to .env
 
 npm install - npx sequelize-cli db:create -  npx sequelize-cli db:migrate - npx sequelize-cli db:seed:all
 
